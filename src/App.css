@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	font-family: 'Orbitron', sans-serif;
+	background-color: #d2e6f4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#root {
+	/* height: 100vh; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/* border: 2px solid green; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h2 {
+	margin-top: 5vh;
+	color: #75b5e3;
+	text-align: center;
+	padding-bottom: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.calculator {
+	/* border: 2px solid red; */
+	padding: 5.5px;
+	background: black;
+	width: 320px;
+	position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.outputDisplay {
+	font-size: 29px;
+	font-family: inherit;
+	color: black;
+	text-align: right;
+	line-height: 35px;
+	background-color: #bac9b9;
+}
+
+.exprDisplay {
+	min-height: 30px;
+	font-family: inherit;
+	font-size: 17px;
+	padding-top: 5px;
+	color: cyan;
+	text-align: right;
+	vertical-align: text-top;
+	line-height: 20px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+button {
+	position: relative;
+	height: 65px;
+	width: 77px;
+	color: white;
+	background-color: #818f9b;
+	outline: 1px solid black;
+	border: none;
+	font-family: inherit;
+	font-size: 20px;
+	cursor: default;
+	/* &:hover {
+		color: black;
+		outline: 0.05em solid grey;
+		z-index: 3;
+	} */
+}
+
+.bigButton {
+	width: 154px;
+}
+
+.ac {
+	background-color: #ac676d;
+}
+
+.operator {
+	background-color: #1fb5a0;
+}
+
+#decimal {
+	width: 76px;
+}
+
+.equals {
+	height: 130px;
+	position: absolute;
+	background-color: #75b5e3;
+}
+
+p {
+	text-align: right;
 }
